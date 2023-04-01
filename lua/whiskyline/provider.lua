@@ -176,7 +176,18 @@ function pd.lsp()
   local function lsp_stl()
     local new_messages = get_progress_messages()
     local res = {}
-    local spinner = { '🌖', '🌗', '🌘', '🌑', '🌒', '🌓', '🌔' }
+    local spinner = {
+      '⠋',
+      '⠙',
+      '⠹',
+      '⠸',
+      '⠼',
+      '⠴',
+      '⠦',
+      '⠧',
+      '⠇',
+      '⠏',
+    }
 
     if not vim.tbl_isempty(new_messages) then
       table.insert(res, spinner[index] .. ' Waiting')
