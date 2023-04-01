@@ -285,7 +285,7 @@ end
 function pd.branch()
   local result = {
     stl = function()
-      local icon = ' '
+      local icon = ' '
       local res = gitsigns_data('head')
       return #res > 0 and icon .. res or 'UNKOWN'
     end,
