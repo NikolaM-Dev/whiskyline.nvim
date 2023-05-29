@@ -322,7 +322,7 @@ local function diagnostic_info(severity)
     return ''
   end
 
-  local signs = { ' ', ' ', ' ', ' ' }
+  local signs = { '󰅙 ', ' ', '󰋼 ', '󰌵 ' }
 
   local count = #vim.diagnostic.get(0, { severity = severity })
   return count == 0 and '' or signs[severity] .. tostring(count) .. ' '
